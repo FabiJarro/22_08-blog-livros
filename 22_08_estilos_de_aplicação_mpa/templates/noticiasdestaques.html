@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/static/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600&display=swap" rel="stylesheet">
+
+    <title>Entre páginas: um blog literário</title>
+</head>
+
+<body>
+    <style>
+        body {
+            font-family: 'Quicksand', sans-serif;
+            background: #f8f9fa;
+            margin: 0;
+            padding: 0;
+        }
+
+        h1 {
+            margin: 30px 0;
+        }
+
+        .noticias-container {
+            display: grid;
+            /* grid-template-columns: minmax(300px, 1fr)); */
+            /* grid-template-columns: auto-fit, minmax(300px, 1fr);  */
+            /* grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); */
+            gap: 80px;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 10px;
+
+        }
+
+
+        .noticia-card {
+            background: #fff;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            transition: transform 0.2s;
+        }
+
+
+        .noticias1e2,
+        .noticias3e4 {
+            display: flex;
+            gap: 15px;
+            background: #fff;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            transition: transform 0.2s;
+            width: 1200px;
+            height: 400px
+        }
+
+        .noticia-card1,
+        .noticia-card3 {
+            background: #fff;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            transition: transform 0.2s;
+            /* width: 700px;
+            height: 500px; */
+            flex: 2;
+        }
+
+
+        .noticia-card2,
+        .noticia-card4 {
+            background: #fff;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            transition: transform 0.2s;
+            /* width: 500px;
+            height: 500px; */
+            flex: 1;
+        }
+
+
+        .noticia-card1:hover,
+        .noticia-card2:hover,
+        .noticia-card3:hover,
+        .noticia-card4:hover {
+            transform: translateY(-5px);
+        }
+
+        .noticia-img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+
+        .noticia-info {
+            padding: 15px;
+        }
+
+        .categoria {
+            font-size: 12px;
+            font-weight: bold;
+            color: #0077b6;
+            text-transform: uppercase;
+        }
+
+        .data {
+            float: right;
+            font-size: 12px;
+            color: #888;
+        }
+
+        .titulo {
+            margin: 10px 0;
+            font-size: 18px;
+            font-weight: bold;
+            color: #26006d;
+            text-decoration: none;
+            display: block;
+        }
+
+        .titulo:hover {
+            text-decoration: underline;
+        }
+
+        .resumo {
+            font-size: 14px;
+            color: #444;
+        }
+    </style>
+
+    <header>
+        <h1>Entre Páginas: Um blog literário</h1>
+    </header>
+
+    <nav>
+
+        <a href="/">Home</a>
+        <a href="/noticiasdestaques">Noticias destaques</a>
+        <a href="/resenhaspopulares">Resenhas Populares</a>
+        <a href="/lancamentos">Lançamentos</a>
+        <a href="/sobre">Sobre</a>
+    </nav>
+
+
+
+    <main>
+
+        <h1>DESTAQUES</h1>
+
+
+        <div class="noticias-container">
+
+
+
+            <div class="noticias1e2">
+                <div class="noticia-card1">
+                    <img class="noticia-img" src="static/noitesbrancas.jpg" alt="Notícia">
+                    <div class="noticia-info">
+                        <span class="categoria">Adaptações literárias</span>
+                        <span class="data">23/08/2025</span>
+                        <a href="/materianoticia" class="titulo">"Dias Perfeitos", de Raphael Montes virou série!</a>
+                        <p class="resumo">Suspense de Raphael Montes é a mais nova série da GloboPlay! Confira!</p>
+                    </div>
+                </div>
+
+                <div class="noticia-card2">
+                    <img class="noticia-img" src="static/noitesbrancas.jpg" alt="Notícia">
+                    <div class="noticia-info">
+                        <span class="categoria">Recomendações</span>
+                        <span class="data">23/08/2025</span>
+                        <a href="/materianoticia" class="titulo">Confira livros favoritos de artistas!</a>
+                        <p class="resumo">A lista contém recomendações desde a Olivia Rodrigo, Harry Styles, Adele e muito mais!
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="noticias3e4">
+                <div class="noticia-card4">
+                    <img class="noticia-img" src="static/noitesbrancas.jpg" alt="Notícia">
+                    <div class="noticia-info">
+                        <span class="categoria">Bienal</span>
+                        <span class="data">22/08/2025</span>
+                        <a href="/materianoticia" class="titulo">Bienal 2025? Confira detalhes!</a>
+                        <p class="resumo">mancheteeeeeeeeeeeee</p>
+                    </div>
+                </div>
+
+                <div class="noticia-card3">
+                    <img class="noticia-img" src="static/noitesbrancas.jpg" alt="Notícia">
+                    <div class="noticia-info">
+                        <span class="categoria">Adaptações literárias</span>
+                        <span class="data">22/08/2025</span>
+                        <a href="/materianoticia" class="titulo">Wicked: Compare o livro com a Adaptação!</a>
+                        <p class="resumo">Quer saber as semelhanças e diferenças entre ambos? Clique aqui!</p>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+
+
+
+
+
+    </main>
+
+
+    <footer>
+        &#169; 2025 Blog Entre Paginas. Todos os direitos reservados.
+    </footer>
+</body>
+
+</html>
