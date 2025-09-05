@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+    <meta charset="UTF-8">
+    <title>Entre Paginas</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css')}}">
+
+
+
+
+
+
+    </head>
+
+
+    <body>
+
+    <header>
+        <h1>Entre Páginas: Um blog literário</h1>
+    </header>
+
+    <nav>
+        <a href="/">Home</a>
+        <a href="/noticiasdestaques">Noticias destaques</a>
+        <a href="/resenhaspopulares">Resenhas Populares</a>
+        <a href="/lancamentos">Lançamentos</a>
+        <a href="/sobre">Sobre</a>
+    </nav>
+
+    
+
+
+    {%block conteudo%}
+    {%endblock%}
+
+    <footer>
+        &#169; 2025 Blog Entre Paginas. Todos os direitos reservados.
+    </footer>
+
+    </body>
+</html>
+
